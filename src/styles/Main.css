@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+html,body {
+  padding:0;
+  margin:0;
+  height: 100%;
+  font-family: 'Amatic SC';
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  text-align: center;
+}
+
+.top {
+  height: 15%;
+}
+
+.big-top {
+  height: 20%;
+  margin: 30px;
+  font-size: 72px;
+}
+
+
+.half-top {
+  height: 40%;
+  margin: 30px;
+  font-size: 72px;
+}
+
+.center-text {
+  height: 65%;
+  margin: 20px 15% 20px 15%;
+  width: 70%;
+  font-size: 48px;
+}
+
+.welcome-text {
+  height: 65%;
+  margin: 20px;
+  font-size: 72px;
+}
+
+.bottom {
+  height: 20%;
+}
+
+.bottom button {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 40px;
+  min-width: 50px;
+}
+
+button {
+  align-self:center;
+  background:transparent;
+  padding:1rem 1rem;
+  margin:0 1rem;
+  transition:all .5s ease;
+  color:#41403E;
+  font-size:2rem;
+  letter-spacing:1px;
+  outline:none;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 2px #41403E;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  letter-spacing: 4px;
+}
