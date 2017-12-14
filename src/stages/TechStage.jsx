@@ -1,16 +1,14 @@
 import * as React from 'react';
 import StaticTextPage from '../pages/StaticTextPage';
+import LightSwitchPage from '../pages/LightSwitchPage';
 import DreamingOrAwakePage from '../pages/DreamingOrAwakePage';
 
 class TechStage extends React.Component {
   constructor(props) {
     super(props);
 
-    // Could the text randomization happen here instead? setting an initial variable for this?
-
     this.instructions = "Technology tends to work strangely or not at all in dreams.";
     this.findASwitch = "Find a light switch near you, and try flipping it on and off.";
-    this.nowTryIt = "Now try it:";
   }
 
   toRender() {
@@ -28,10 +26,10 @@ class TechStage extends React.Component {
           buttonAction={this.props.nextStep} 
         />;
       case 2:
-        // nose check image
-        return <StaticTextPage 
-          text = {this.nowTryIt}
-          buttonAction={this.props.nextStep} 
+        // light switch image
+        return <LightSwitchPage
+          buttonAction={this.props.nextStep}
+          dreaming = {this.props.dreaming}
         />;
       case 3:
         return <DreamingOrAwakePage

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import StaticTextPage from '../pages/StaticTextPage';
+import NoseImagePage from '../pages/NoseImagePage';
 import DreamingOrAwakePage from '../pages/DreamingOrAwakePage';
 
 class NoseStage extends React.Component {
   constructor(props) {
     super(props);
 
-    this.instructions = "Using a signal from your own body is often the most reliable way to check if you are dreaming.";
+    this.instructions = "Using a signal from your own body is the most reliable way to check if you are dreaming.";
     this.sayOutLoud = "Say this out loud: 'If I pinch my nose shut and can still breath through it, I must be in a dream.'";
-    this.nowTryIt = "Now try it:";
   }
 
   toRender() {
@@ -27,8 +27,7 @@ class NoseStage extends React.Component {
         />;
       case 2:
         // nose check image
-        return <StaticTextPage 
-          text = {this.nowTryIt}
+        return <NoseImagePage
           buttonAction={this.props.nextStep} 
         />;
       case 3:
