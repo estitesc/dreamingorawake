@@ -8,7 +8,7 @@ class NoseStage extends React.Component {
     super(props);
 
     this.instructions = "Using a signal from your own body is the most reliable way to check if you are dreaming.";
-    this.sayOutLoud = "Say this out loud: 'If I pinch my nose shut and can still breath through it, I must be in a dream.'";
+    this.sayOutLoud = "Say out loud: 'If I can breath into my nose while pinching it, this must be a dream.'";
   }
 
   toRender() {

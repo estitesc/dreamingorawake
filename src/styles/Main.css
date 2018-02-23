@@ -16,6 +16,7 @@ html,body {
   height: 300px;
   width: 170px;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .light-switch.on {
@@ -60,11 +61,29 @@ html,body {
   font-size: 72px;
 }
 
+/* Make this responsive. Height should be 65% on mobile but 40% or 50% on desktop. */
 .center-text {
   height: 65%;
-  margin: 20px 15% 20px 15%;
+  margin: 10% 15% 10% 15%;
   width: 70%;
   font-size: 48px;
+}
+
+.center-image {
+  height: 50%;
+  margin: 10% 15% 10% 15%;
+}
+
+@media(min-width: 801px) {
+  .center-text {
+    height: 40%;
+    margin: 5% 15% 5% 15%;
+  }
+  
+  .center-image {
+    height: 40%;
+    margin: 5% 15% 5% 15%;
+  }
 }
 
 .image-page-top {
@@ -72,11 +91,6 @@ html,body {
   margin: 20px;
   font-size: 72px;
   color: #41403E;
-}
-
-.center-image {
-  height: 50%;
-  margin: 20px 15% 20px 15%;
 }
 
 .welcome-text {

@@ -8,7 +8,7 @@ class TechStage extends React.Component {
     super(props);
 
     this.instructions = "Technology tends to work strangely or not at all in dreams.";
-    this.findASwitch = "Find a light switch near you, and try flipping it on and off.";
+    this.findASwitch = "Examine this light switch, and try flipping it on and off.";
   }
 
   toRender() {
